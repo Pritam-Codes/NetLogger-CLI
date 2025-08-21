@@ -1,0 +1,22 @@
+[
+  {
+    "name": "SSH Alert",
+    "match": { "protocol": "tcp", "dst_port": 22 },
+    "action": "alert"
+  },
+  {
+    "name": "DNS Logging",
+    "match": { "protocol": "udp", "dst_port": 53 },
+    "action": "log"
+  },
+  {
+    "name": "HTTP Alert",
+    "match": { "protocol": "tcp", "dst_port": 80 },
+    "action": "alert"
+  },
+  {
+    "name": "HTTPS Logging",
+    "match": { "protocol": "tcp", "dst_port": 443 },
+    "action": "log"
+  }
+]
